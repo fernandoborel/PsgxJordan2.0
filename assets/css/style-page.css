@@ -1,0 +1,19 @@
+*{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+main{
+    max-width: 1440px;
+    align-items: center;
+    margin: auto;
+}
+.banner{
+    background-image: url(../images/psg-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+h1{
+    color: #fff;
+}

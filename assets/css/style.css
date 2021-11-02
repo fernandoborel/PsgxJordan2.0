@@ -3,15 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
 }
+
+
 /*header*/  
 .header{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 120px;
-  background-color: #eee;
   max-width: 1440px;
   margin: auto;
 }
@@ -52,7 +52,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #eee;
   height: 8vh;
 }
   
@@ -91,7 +90,7 @@ nav {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #eee;
+    background-color: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -148,12 +147,12 @@ main{
   background-repeat: no-repeat;
   height: 70vh;
 }
-h1{
+#text{
   text-align: center;
   color: #fff;
   padding-top: 180px;
 }
-h1::after {
+#text::after {
   content: '|';
   margin-left: 5px;
   opacity: 1;
@@ -169,9 +168,26 @@ h1::after {
 }
 
 @media (max-width: 999px) {
-  h1{
+  #text{
     padding-top: 50px;
   }
 }
 
 /*sobre*/
+
+.sobre-desc {
+  max-width: 1440px;
+  margin: auto;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+@media (max-width: 999px) {
+  .sobre-desc {
+    margin: 30px 20px;
+  }
+}
+
+/* carrosel */

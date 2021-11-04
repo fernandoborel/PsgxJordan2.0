@@ -208,44 +208,36 @@ main{
 
 /* carrosel */
 
-.imagens {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.carrossel {
-  box-shadow: 2px 2px 4x #121212;
-  overflow: hidden;
-  height: 500px;
-  width: 500px;
+.slide {
+  max-width: 380px;
+  margin: 20px auto;
 }
 
-.container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
+.slide-items{
+  position: relative;
 }
 
-.container img{
-  object-fit: cover;
-  height: 500px;
-  width: 500px;
+.slide-items > * {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
-@media (max-width: 999px) {
-  .imagens {
-    flex-direction: column;
-    max-width: 400px;
-  }
-  .carrosel{
-    height: 300px;
-    width: 300px;
-    
-  }
-  .container img{
-    width: 400px;
-    height: 400px;
-  }
+.slide-items > .active {
+  position: relative;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.slide-prev,
+.slide-next {
+  font-size: 70px;
+  background: none;
+  border: none;
+  color: #333;
 }

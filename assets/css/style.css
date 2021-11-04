@@ -183,6 +183,7 @@ main{
   }
 }
 
+/*responsividade banner text*/
 @media (max-width: 999px) {
   #text{
     padding-top: 50px;
@@ -199,7 +200,7 @@ main{
   margin-bottom: 50px;
   font-size: 20px;
 }
-
+/*responsividade "sobre"*/
 @media (max-width: 999px) {
   .sobre-desc {
     margin: 30px 20px;
@@ -264,14 +265,70 @@ img {
   animation: thumb 5s forwards linear;
 }
 
+/*Animações*/
 @keyframes thumb {
   to {
     transform: initial;
   }
 }
 
+/*responsividade carrosel*/
 @media (max-width: 999px) {
   .slide{
     margin: 20px auto;
+  }
+}
+
+/*descrição e botão*/
+
+.imagens {
+  display: flex;
+}
+
+.desc--carrossel{
+  margin-top: 80px;
+  font-family: 'Lato';
+  font-weight: 300 italic;
+  max-width: 700px;
+  margin-left: 100px;
+}
+.desc--carrossel h1,
+.desc--carrossel h2,
+.desc--carrossel h3{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.desc--carrossel p{
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+.button-desc a{
+  text-decoration: none;
+  color: #FFF;
+}
+.button-desc{
+  display: inline-block;
+  background-color: #000;
+  color: #FFF;
+  padding: 20px 40px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 300;
+  margin-left: 250px;
+}
+
+@media(max-width: 999px) {
+  .imagens{
+    flex-direction: column;
+  }
+  .desc--carrossel{
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 350px;
+  }
+  .button-desc{
+    margin-left: 50px;
+    margin-bottom: 30px;
   }
 }

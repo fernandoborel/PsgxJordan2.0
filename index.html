@@ -91,10 +91,10 @@
     
     <div class="contato" id="contato">
         <h2 id="title-contact">Não quer perder novas promoções?<br/> Cadastre-se, é grátis! </h2>
-        <form method="POST">
-            <input type="text" placeholder="nome" required />
-            <input type="tel" placeholder="telefone" required />
-            <input type="email" placeholder="email" required />
+        <form method="POST" action="cadastro.php" class="validator">
+            <input type="text" placeholder="nome" data-rules="required|min=4" />
+            <input type="tel" placeholder="telefone" data-rules="required" />
+            <input type="email" placeholder="email" data-rules="required" />
             <br/>
             <input type="submit" value="Cadastrar" />
             <div id="msg-result"></div>

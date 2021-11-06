@@ -83,20 +83,23 @@ let formValidator = {
 
     let inputs = form.querySelectorAll('input');
 
-    for(let i=0; i<inputs.length; i++){
+    formValidator.clearErrors();
+    
+    for(let i=0; i<inputs.length; i++){ // verificando os valores
       let input = inputs[i];
       let check = formValidator.checkInput(input);
       if(check !== true) {
         send = false;
-        console.log(check);
+        formValidator.showError(input, check);
       }
     }
     
     if(send) {
+      let msg = alert("Cadastrado!");
       form.submit();
     }
   }, 
-  checkInput:(input) => {
+  checkInput:(input) => { // verificando as regras
     let rules = input.getAttribute('data-rules');
 
     if(rules !== null) {
@@ -109,18 +112,51 @@ let formValidator = {
               return 'Este campo é obrigatório!'
             }
           break;
-          case 'min':
-
-          break;
+          case 'email':
+            if(input.value != '') {
+              let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if(!regex.test(input.value.toLowerCase())) {
+                    return 'E-mail digitado não é válido!';
+                }
+            }
         }
       }
+      
     }
-
+    
     return true;
+    
+    
+  }, 
+  showError:(input, error) => {
+    input.style.borderColor = '#FF0000';
+
+    let errorElement = document.createElement('div');
+    errorElement.classList.add('error');
+    errorElement.innerHTML = error;
+
+    input.parentElement.insertBefore(errorElement, input);
+    /* 
+      Caso queira o erro abaixo do input:
+      input.parentElement.insertBefore(errorElement, input.ElementSibling);
+    */
+  },
+  clearErrors:() => {
+    let inputs = form.querySelectorAll('input'); // remove as bordas 
+    for(let i=0; i<inputs.length; i++) {
+      inputs[i].style = '';
+    }
+    
+    
+    let errorElements = document.querySelectorAll('.error'); // remove o texto de erro
+    for(let i=0; i<errorElements.length; i++) {
+      errorElements[i].remove();
+    }
   }
 };
 
 
 let form = document.querySelector('.validator');
 form.addEventListener('submit', formValidator.handleSubmit);
+
 

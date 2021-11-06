@@ -372,7 +372,12 @@ input[type=submit] {
   background-color: #121212;
   color: #fff;
 }
-
+.error{
+  font-size: 20px;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px;
+}
 
 /*responsividade*/
 @media (max-width: 999px) {

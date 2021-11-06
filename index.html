@@ -29,7 +29,7 @@
                 <ul class="nav-list">
                     <li><a href="">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
     </header>
@@ -88,9 +88,18 @@
         </div>
     </section>
     <!--contato-->
-    <input type="text"/>
-    <input type="tel">
-    <input type="email">
+    
+    <div class="contato" id="contato">
+        <h2 id="title-contact">Não quer perder novas promoções?<br/> Cadastre-se, é grátis! </h2>
+        <form method="POST">
+            <input type="text" placeholder="nome" required />
+            <input type="tel" placeholder="telefone" required />
+            <input type="email" placeholder="email" required />
+            <br/>
+            <input type="submit" value="Cadastrar" />
+            <div id="msg-result"></div>
+        </form>
+    </div>
     <script src="assets/script/script.js"></script>
     <script src="assets/script/mobile-navbar.js"></script>
 </body>

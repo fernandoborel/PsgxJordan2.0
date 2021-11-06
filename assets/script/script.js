@@ -74,4 +74,8 @@ class SlideStories {
   
   new SlideStories('slide');
 
-//
+
+// validador de formulários
+
+
+

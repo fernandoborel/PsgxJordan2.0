@@ -338,3 +338,57 @@ img {
 }
 
 /*contato*/
+.contato{
+  max-width: 1440px;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 600px;
+}
+#title-contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+input{
+  width: 200px;
+  height: 30px;
+  border: 2px solid #121212;
+  border-radius: 20px;
+  padding-left: 20px;
+  margin: 30px 20px;
+}
+input::placeholder {
+  color: #121212;
+  text-transform: uppercase;
+}
+input:hover{
+  border: 2px solid blue;
+}
+input[type=submit] {
+  width: 80px;
+  padding-left: 0;
+  margin-left: 350px;
+  background-color: #121212;
+  color: #fff;
+}
+
+
+/*responsividade*/
+@media (max-width: 999px) {
+  .contato{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  input{
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #title-contact{
+    margin-left: 70px;
+  }
+  input[type=submit] {
+    margin-left: 80px;
+  }
+}

@@ -232,6 +232,7 @@ img {
   border: none;
   font-size: 70px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .slide-items > * {
@@ -331,4 +332,9 @@ img {
     margin-left: 50px;
     margin-bottom: 30px;
   }
+  .desc--carrossel p{
+    font-size: 20px;
+  }
 }
+
+/*contato*/

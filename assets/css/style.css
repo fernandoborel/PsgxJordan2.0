@@ -347,7 +347,7 @@ img {
 #title-contact {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 150px;
+  margin-left: 200px;
 }
 input{
   width: 200px;
@@ -366,11 +366,10 @@ input:hover{
   border: 2px solid blue;
 }
 input[type=submit] {
-  width: 80px;
-  padding-left: 0;
-  margin-left: 350px;
+  padding: 5px 10px;
   background-color: #121212;
   color: #fff;
+  text-transform: uppercase;
 }
 .error{
   font-size: 20px;
@@ -396,5 +395,6 @@ input[type=submit] {
   }
   input[type=submit] {
     margin-left: 80px;
+    font-size: 15px;
   }
 }

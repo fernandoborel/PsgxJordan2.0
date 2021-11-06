@@ -95,7 +95,7 @@ let formValidator = {
     }
     
     if(send) {
-      let msg = alert("Cadastrado!");
+      let msg = alert("Cadastrado!"); //mensagem de alerta
       form.submit();
     }
   }, 
@@ -113,6 +113,7 @@ let formValidator = {
             }
           break;
           case 'email':
+            //validação de email
             if(input.value != '') {
               let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 if(!regex.test(input.value.toLowerCase())) {

@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 /*scroll bar*/
 
 ::-webkit-scrollbar {
@@ -434,4 +436,18 @@ input[type=submit] {
   .devfer h2{
     font-size: 20px;
   }
+}
+
+/*scrollsuave*/
+.scrollbutton{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
 }

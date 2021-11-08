@@ -13,3 +13,7 @@ Para o efeito de carrosel foi utilizado foreach para percorrer cada item e adici
 Para o validador de formulários foi utilizado o valor dos inputs e consultar em cada expressão regular.
 
 Para o scroll suave foi utilizado uma função e nela foi definido o valor behavior para "smooth":
+
+Foi feito a estilização da barra de rolagem na página, via CSS.
+
+Não foi utilizado nenhum framework ou biblioteca.

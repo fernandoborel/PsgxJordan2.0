@@ -1,6 +1,6 @@
-PSG x Jordan V2.0
+## PSG x Jordan V2.0
 
-Essa página é a versão 2.0, a versão 1.0 foi feita em Abril de 2021 quando eu estava aprendendo a programar. 
+### Essa página é a versão 2.0, a versão 1.0 foi feita em Abril de 2021 quando eu estava aprendendo a programar. 
 
 Essa versão conta com menu responsivo, animação no titulo, validador de formulários e scroll suave.
 
@@ -16,4 +16,4 @@ Para o scroll suave foi utilizado uma função e nela foi definido o valor behav
 
 Foi feito a estilização da barra de rolagem na página, via CSS.
 
-Não foi utilizado nenhum framework ou biblioteca.
+### Não foi utilizado nenhum framework ou biblioteca.

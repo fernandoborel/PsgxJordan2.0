@@ -1,8 +1,8 @@
-## PSG x Jordan V2.0
+# PSG x Jordan V2.0
 
 ### Essa página é a versão 2.0, a versão 1.0 foi feita em Abril de 2021 quando eu estava aprendendo a programar. 
 
-Essa versão conta com menu responsivo, animação no titulo, validador de formulários e scroll suave.
+### Essa versão conta com menu responsivo, animação no titulo, validador de formulários e scroll suave.
 
 Para realizar o menu responsivo foi utilizado animações via keyframes no css, no js foi utilizado class constructor bem como funções.
 
